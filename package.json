@@ -1,0 +1,21 @@
+{
+  "name": "homes-for-you",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikzor/Homes-for-you.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikzor/Homes-for-you/issues"
+  },
+  "homepage": "https://github.com/mikzor/Homes-for-you#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.25.1"
+  }
+}
