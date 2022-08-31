@@ -3,32 +3,26 @@ exports.HomePage = class HomesPage {
     constructor(page) {
        this.page = page;
 
-       //this.housePrice = page.locator('.card-img-overlay').nth(0);
-     // this.priceOne = page.locator('.badge-secondary').nth(0);
-      //  this.imageCardOne = page.locator('.card-img-top').nth(0);
-      //  this.cityName = page.locator('.text-primary').nth(0);
-       this.cityBox = page.locator(':right-of(.fa-map-marker)').nth(0);
-      // this.cardSquareFoot = page.locator(':right-of(.fa-th-large)').nth(0);
-       this.cardBathrooms = page.locator(':right-of(.fa-bed)').nth(0);
+       this.firstHousePrice = page.locator('.card-img-overlay').first();
+       this.firstPrice = page.locator('.badge-secondary').first();
+       this.firstImageCard = page.locator('.card-img-top').first();
+       this.firstCityName = page.locator('.text-primary').first();
+       this.firstCityAddress = page.locator('.card-body p').first();
+       this.firstCardSquareFoot = page.locator('.card-body div div ').first();
 
-       this.secondHousePrice = page.locator('.card-img-overlay').nth(1);
-       this.secondPriceOne = page.locator('.badge-secondary').nth(1);
-       this.secondImageCardOne = page.locator('.card-img-top').nth(1);
-       this.secondCityName = page.locator('.text-primary').nth(1);
-       this.secondCityBox = page.locator('[class="fas fa-map-marker text-secondary"]').nth(1);
-       this.secondCardSquareFoot = page.locator('.fa-th-large').nth(1);
-       this.secondCardBathrooms = page.locator('.fa-bed').nth(1);
+       this.secondHousePrice = page.locator('.card-img-overlay').second();
+       this.secondPrice = page.locator('.badge-secondary').second();
+       this.secondImageCard = page.locator('.card-img-top').second();
+       this.secondCityName = page.locator('.text-primary').second();
+       this.secondCityAddress = page.locator('.card-body p').second();
+       this.secondCardSquareFoot = page.locator('.card-body div div ').second();
 
-       this.thirdHousePrice = page.locator('.card-img-overlay').nth(2);
-       this.thirdPriceOne = page.locator('.badge-secondary').nth(2);
-       this.thirdImageCardOne = page.locator('.card-img-top').nth(2);
-       this.thirdCityName = page.locator('.text-primary').nth(2);
-       this.thirdCityBox = page.locator('[class="fas fa-map-marker text-secondary"]').nth(2);
-       this.thirdCardSquareFoot = page.locator('.fa-th-large').nth(2);
-       this.thirdCardBathrooms = page.locator('.fa-bed').nth(2);
-
-       
-      // this.stateButton = page.locator('[name="state]');
+       this.thirdHousePrice = page.locator('.card-img-overlay').third();
+       this.thirdPrice = page.locator('.badge-secondary').third();
+       this.thirdImageCard = page.locator('.card-img-top').third();
+       this.thirdCityName = page.locator('.text-primary').third();
+       this.thirdCityAddress = page.locator('.card-body p').third();
+       this.thirdCardSquareFoot = page.locator('.card-body div div ').third();
 
     }
 }

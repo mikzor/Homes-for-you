@@ -9,33 +9,27 @@ test.beforeEach(async ({ page }) => {
 });
 
 test.describe('Homepage', () => {
- test.only('Should see homes for sale ', async ({ page }) => {
-   // await expect(homePage.housePrice).toBeVisible();
-   // await expect(homePage.priceOne).toBeVisible();
-  //  await expect(homePage.imageCardOne).toBeVisible();
-  //  await expect(homePage.cityName).toBeVisible();
-   await expect(homePage.cityBox).toBeVisible();
-   await expect(homePage.cardSquareFoot).toBeVisible();
-   await expect(homePage.cardBathrooms).toBeVisible();
-});
+ test.only('Should see homes for sale and verify piece of data in every home card', async ({ page }) => {
+  await homePage.firstHousePrice.innerText();
+  await homePage.firstPrice.innerText();
+  await homePage.firstImageCard.innerText();
+  await homePage.firstCityName.innerText();
+  await homePage.firstCityAddress.innerText();
+  await homePage.firstCardSquareFoot.innerText();
 
-test('Should be able second', async ({ page }) => {
-  await expect(homePage.secondHousePrice).toBeVisible();
-  await expect(homePage.secondPriceOne).toBeVisible();
-  await expect(homePage.secondImageCardOne).toBeVisible();
-  await expect(homePage.secondCityName).toBeVisible();
-  await expect(homePage.secondCityBox).toBeVisible();
-  await expect(homePage.secondCardSquareFoot).toBeVisible();
-  await expect(homePage.secondCardBathrooms).toBeVisible();
-});
-test('Should be able third', async ({ page }) => {
-  await expect(homePage.thirdHousePrice).toBeVisible();
-  await expect(homePage.thirdPriceOne).toBeVisible();
-  await expect(homePage.thirdImageCardOne).toBeVisible();
-  await expect(homePage.thirdCityName).toBeVisible();
-  await expect(homePage.thirdCityBox).toBeVisible();
-  await expect(homePage.thirdCardSquareFoot).toBeVisible();
-  await expect(homePage.thirdCardBathrooms).toBeVisible();
-});
+  await homePage.secondHousePrice.innerText();
+  await homePage.secondPrice.innerText();
+  await homePage.secondImageCard.innerText();
+  await homePage.secondCityName.innerText();
+  await homePage.secondCityAddress.innerText();
+  await homePage.secondCardSquareFoot.innerText();
+
+  await homePage.thirdHousePrice.innerText();
+  await homePage.thirdPrice.innerText();
+  await homePage.thirdImageCard.innerText();
+  await homePage.thirdCityName.innerText();
+  await homePage.thirdCityAddress.innerText();
+  await homePage.thirdCardSquareFoot.innerText();
+ });
 
 });
